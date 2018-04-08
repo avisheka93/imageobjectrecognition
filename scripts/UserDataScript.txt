@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+sudo yum update -y
+sudo yum install git -y
+cd /home/ec2-user/
+git clone https://github.com/mbali17/imageobjectrecognition.git
