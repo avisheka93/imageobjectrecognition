@@ -1,0 +1,25 @@
+{# This is the base structure for all the templates to be used #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if pageTitle%}
+    <title>{{pageTitle}}</title>
+    {% else %}
+    <title>DropBox Clone.</title>
+    {% endif %}
+     <link href="{{ url_for('.static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <footer>
+         <nav>
+             <h1>Know more</h1>
+            <ul class="footer-links">
+                <li><a href="https://github.com/mbali17">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/mir-basheer-ali/">Linked in</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

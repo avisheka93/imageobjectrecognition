@@ -1,2 +1,0 @@
-This folder consists of the templates for different routes of the application.
-This folder consists of the templates for different routes of the application.
